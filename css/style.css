@@ -1,0 +1,36 @@
+body{
+    background-color:#DDD;
+}
+input[type="text"]{
+    width:80%;
+}
+#clavier_virtuel{
+    border: 1px solid;
+    -moz-border-radius: 8px;
+}
+#clavier_virtuel td{
+    background-color:white;
+    font-size:xx-small;
+    border: 1px outset;
+    width:10px;
+    -moz-border-radius: 4px;
+}
+.dead{
+    background-color:transparent !important;
+    border:0px !important;
+}
+#clavier_virtuel td:focus{
+    border: 1px inset;
+}
+
+/* #copy{
+
+        height: 90px;
+
+} */
+
+/* .hauteur{
+
+    min-height: 25%;
+    min-width: 25%;
+} */

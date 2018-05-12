@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clavier Hemmed</title>
+</head>
+<body class="container-fluid">
+    <h1>HEMMED le clavier virtuel pour EMMET/BOOTSTRAP3</h1>
+
+    <div id="clavier_virtuel" class="row">
+        <section class="container-fluid">
+            <div class="row">
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('?', true)">?</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('&', true)">&#038;</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press(quote2, false)">"</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('\'', false)">{'</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('(', false)">[(</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('-', false)">|-</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('`', false)">`</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('_', false)">\_</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('^', false)">^</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('@', false)">@</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press(')', false)">])</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('}', false)">}</button>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="row">
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press(':', true)">:</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('>', true)">></button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('#', false)">#</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('{', false)">{</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('}', false)">}</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('|', false)">|</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('|c', false)">|c</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('(', false)">(</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press(')', false)">)</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('[', false)">[</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press(']', false)">]</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('=', false)">=</button>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="row">
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('/', true)">/</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('*', true)">*</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('-', true)" colspan="1">-</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press(',', false)">?,</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press(';', false)">.;</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press(':', false)">/:</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('!', false)">!</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('<', false)">&gt;&lt;</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('$', false)">$</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press(':', false)">:</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('0', true)" colspan="2">0</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('.', true)">.</button>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="row">
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('ul', true)">ul</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('li', true)">li</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('ol', true)">ol</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('div', true)">div</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('span', true)">span</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('bq', true)">bq</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('p', true)">p</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('h', true)">h</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('a', true)">a</button>
+                <!-- - -->
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('1', true)">1</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('2', true)">2</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('3', true)">3</button>
+            </div>
+
+            <div class="row">
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('header', true)">header</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('nav', true)">nav</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('main', true)">main</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('section', true)">section</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('aside', true)">aside</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('article', true)">article</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('footer', true)">footer</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('button', true)">button</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maxime hic blanditiis error laboriosam quisquam, tenetur qui ipsa eius! Quod amet fugiat explicabo ratione modi minus eveniet ad possimus unde.', true)">LOREM</button>
+                <!-- - -->
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('4', true)">4</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('5', true)">5</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('6', true)">6</button>
+            </div>
+
+            <div class="row">
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('table', true)">table</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('caption', true)">caption</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('th', true)">th</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('tr', true)">tr</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('td', true)">td</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('thead', true)">thead</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('tbody', true)">tbody</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('tfoot', true)">tfoot</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('hr', true)">hr</button>
+                <!-- - -->
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('7', true)">7</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('8', true)">8</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('9', true)">9</button>
+            </div>
+
+            <div class="row">
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('form', true)">form</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('post', true)">post</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('get', true)">get</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('fieldset', true)">fieldset</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('legend', true)">legend</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('label', true)">label</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('input', true)">input</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('password', true)">password</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('email', true)">email</button>
+                <button class="col-md-2 col-xs-2 col-sm-2" id="copy" type="button">Copy in clipboard</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('+', true)" rowspan="2" colspan="1">+</button>
+                
+            </div>
+            <div class="row">
+                    <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('hidden', true)">hidden</button>
+                    <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('textarea', true)">textarea</button>
+                    <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('select', true)">select</button>
+                    <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('option', true)">option</button>
+                    <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('source', true)">source</button>
+                    <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('.', true)">.</button>
+                    <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('/', true)">/</button>
+                    <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('*', true)">*</button>
+                    <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('+', true)">+</button>
+                    <button class="col-md-2 col-xs-2 col-sm-2 text-success" colspan="2" rowspan="2" onclick="press('\n', true)">Enter</button>
+                    <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('\t')" colspan="2">tab</button>
+            </div>
+        </section>
+
+        <!-- <section class="container">
+    <div class="row">
+    <button class="dead"></button>
+    
+    
+    <button colspan="2" class="dead"></button>
+    </div>
+    </section> -->
+
+        <section class="container-fluid">
+            <div class="row">
+                <!-- <button colspan="2" class="dead"></button> -->
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('img', true)">img</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('figure', true)">figure</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('figcaption', true)">figcaption</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('audio', true)">audio</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="press('video', true)">video</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="capslock();" colspan="2">CapsLock</button>
+                <button class="col-md-5 col-xs-5 col-sm-5" onclick="press(' ',true)" colspan="6">&#160;backspace</button>
+                <button class="col-md-1 col-xs-1 col-sm-1" onclick="backslash();" colspan="2">&lt;--</button>
+                <!-- <button colspan="6" class="dead"></button> -->
+            </div>
+        </section>
+    </div>
+
+    <hr />
+
+    <form class="row">
+        <!-- <input type="text" onfocus="claviersur(this)"/>
+    <input type="text" onfocus="claviersur(this)"/> -->
+        <textarea id="to-copy" onfocus="claviersur(this)" class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+    </textarea>
+    </form>
+
+    <hr/>
+
+    <footer><a href="https://emmet.io/">emmet.io</a></footer>
+
+
+    <script type="text/javascript" src="js/monscript.js"></script>
+</body>
+</html>
